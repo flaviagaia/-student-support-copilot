@@ -1,0 +1,5 @@
+{
+  "dataset_name": "Student support knowledge base style corpus",
+  "dataset_reference": "Local academic support corpus with FAQ, policy, calendar, and support process content.",
+  "dataset_note": "This repository uses a deterministic local knowledge base so the support copilot remains fully testable, grounded, and independent from external APIs."
+}
