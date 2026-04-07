@@ -132,6 +132,21 @@ Exemplo:
 }
 ```
 
+### Contrato da API
+`POST /support` retorna:
+- `question`
+- `answer`
+- `recommended_channel`
+- `confidence`
+- `sources`
+- `limitation_note`
+
+Isso é importante porque permite integrar o copiloto com:
+- help center;
+- triagem automática;
+- inbox de suporte;
+- analytics por tipo de dúvida.
+
 ### Do básico ao avançado
 No nível básico, este projeto é um pipeline de recuperação de FAQ com resposta estruturada.
 
@@ -149,6 +164,14 @@ No nível avançado, ele permite discutir:
 - combina retrieval com decisão operacional simples;
 - é alinhado a produtos educacionais de alto volume;
 - ajuda a discutir RAG, API integration e readiness para produção.
+
+### Arquitetura alvo em produção
+Uma evolução natural seria:
+- ingestão de políticas e FAQs institucionais;
+- retrieval híbrido;
+- classificação de intenção;
+- integração com ticketing;
+- tracing de respostas e handoff para agentes humanos.
 
 ## EN
 
@@ -200,3 +223,13 @@ This repository is useful to discuss:
 - routing and escalation logic;
 - education-focused RAG;
 - integration of retrieval and operational response handling.
+
+### Production-facing interpretation
+This MVP already separates:
+- knowledge base;
+- retrieval;
+- grounded response logic;
+- routing recommendation;
+- API exposure.
+
+That makes it easier to evolve the feature into a real student-support workflow.
