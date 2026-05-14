@@ -37,17 +37,17 @@ flowchart LR
 ```
 
 ### Estrutura do repositório
-- [src/sample_data.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/-student-support-copilot/src/sample_data.py)
+- [src/sample_data.py](src/sample_data.py)
   Gera o corpus local de suporte.
-- [src/retrieval.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/-student-support-copilot/src/retrieval.py)
+- [src/retrieval.py](src/retrieval.py)
   Faz o retrieval lexical com `TF-IDF + cosine similarity`.
-- [src/generation.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/-student-support-copilot/src/generation.py)
+- [src/generation.py](src/generation.py)
   Constrói a resposta grounded e define o `recommended_channel`.
-- [src/pipeline.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/-student-support-copilot/src/pipeline.py)
+- [src/pipeline.py](src/pipeline.py)
   Orquestra o run ponta a ponta.
-- [app.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/-student-support-copilot/app.py)
+- [app.py](app.py)
   Expõe a API do copiloto.
-- [tests/test_project.py](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/-student-support-copilot/tests/test_project.py)
+- [tests/test_project.py](tests/test_project.py)
   Valida o contrato mínimo do projeto.
 
 ### Base de conhecimento
@@ -91,7 +91,7 @@ Isso aproxima o projeto de um cenário real de support automation.
 
 ### Contrato de saída
 O pipeline gera:
-- [student_support_copilot_report.json](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/-student-support-copilot/data/processed/student_support_copilot_report.json)
+- [student_support_copilot_report.json](data/processed/student_support_copilot_report.json)
 
 Campos principais:
 - `question`
@@ -159,11 +159,6 @@ No nível avançado, ele permite discutir:
 - integração com backend;
 - evolução para classificação de intenção e LangGraph.
 
-### Como defender este projeto em entrevista
-- ele mostra um caso real de suporte estudantil, não só um chatbot genérico;
-- combina retrieval com decisão operacional simples;
-- é alinhado a produtos educacionais de alto volume;
-- ajuda a discutir RAG, API integration e readiness para produção.
 
 ### Arquitetura alvo em produção
 Uma evolução natural seria:
@@ -188,7 +183,7 @@ This project builds a **student support copilot with RAG**. It answers academic 
 
 ### Output contract
 The project exports:
-- [student_support_copilot_report.json](/Users/flaviagaia/Documents/CV_FLAVIA_CODEX/-student-support-copilot/data/processed/student_support_copilot_report.json)
+- [student_support_copilot_report.json](data/processed/student_support_copilot_report.json)
 
 Main fields:
 - `question`
